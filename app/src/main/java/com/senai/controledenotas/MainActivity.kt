@@ -23,11 +23,19 @@ class MainActivity : AppCompatActivity() {
             val resultado = findViewById<TextView>(R.id.resultado)
             val media = (nota1 + nota2) / 2
 
-            if (media>=5) {
-                resultado.text = "Aprovado"
-                resultado.setTextColor(Color.GREEN)
-            }else {
-                resultado.text = "Reprovado"
+            if(faltas<=10) {
+                if (media >= 5) {
+                    resultado.text =
+                        "Nota 1: " + nota1 + "\n" + "Nota 2: " + nota2 + "\n"+"Media: " + media + "\n"+ "Situação: Aprovado" + "\n" + "Faltas: " + faltas
+                    resultado.setTextColor(Color.GREEN)
+                } else {
+                    resultado.text =
+                        "Nota 1: " + nota1 + "\n" + "Nota 2: " + nota2 + "\n" + "Media: " + media + "\n"+ "Situação: Reprovado" + "\n" + "Faltas: " + faltas
+                    resultado.setTextColor(Color.RED)
+                }
+            }else{
+                resultado.text =
+                    "Nota 1: " + nota1 + "\n" + "Nota 2: " + nota2 + "\n" + "Media: " + media + "\n" + "Situação: Reprovado" + "\n" + "Faltas: " + faltas
                 resultado.setTextColor(Color.RED)
             }
         }

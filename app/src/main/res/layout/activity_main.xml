@@ -75,7 +75,7 @@
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Texto para teste"
+        android:text="Para ser aprovado sua média deve ser maior que 5 e ter menos do que 10 faltas"
         android:textSize="24sp"
         android:textColor="@color/purple_500"
         />
