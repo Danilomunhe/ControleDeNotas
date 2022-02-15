@@ -20,11 +20,20 @@
         />
 
     <EditText
+        android:id="@+id/nome"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome do Aluno"
+        android:inputType="text"
+        />
+
+    <EditText
         android:id="@+id/nota1"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:hint="Nota 1"
         android:inputType="number"
+        android:layout_marginTop="12dp"
         />
 
     <EditText
@@ -37,13 +46,7 @@
         android:layout_marginBottom="12sp"
         />
 
-    <EditText
-        android:id="@+id/faltas"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:hint="Faltas"
-        android:inputType="number"
-        />
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -75,7 +78,7 @@
         android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Para ser aprovado sua média deve ser maior que 5 e ter menos do que 10 faltas"
+        android:text="Para ser aprovado sua média deve ser maior que 5"
         android:textSize="24sp"
         android:textColor="@color/purple_500"
         />
